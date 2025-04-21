@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP REPLACE - Véhicules</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <a href="../index.html">Accueil</a>
+        <a href="armes.html">Armes</a>
+        <a href="vehicules.html" class="active">Véhicules</a>
+        <a href="personnages.html">Personnages</a>
+    </nav>
+    <header class="dashboard-section scroll-fade" style="padding-bottom:1.5rem;">
+        <img src="../assets/images/image_modifiee (17).png" alt="Bannière Véhicules" class="img-custom scroll-fade" style="max-height:220px;object-fit:cover;width:100%;margin-bottom:2rem;">
+        <div class="hero-content">
+            <h1 class="hero-title">Véhicules GTA V</h1>
+            <p class="hero-subtitle">Tous les mods de véhicules disponibles</p>
+        </div>
+    </header>
+    <section class="dashboard-section scroll-fade" style="margin-top:0;">
+        <main>
+            <!-- Le contenu sera généré dynamiquement par JavaScript -->
+        </main>
+    </section>
+    <footer class="dashboard-section scroll-fade" style="text-align:center;padding:1.5rem 1rem 1rem 1rem;margin-top:2rem;">
+        <div style="font-size:1.1rem;color:#bfc7e3;">&copy; 2025 SHOP REPLACE. Tous droits réservés.</div>
+        <div style="margin-top:0.5rem;font-size:0.95rem;">
+            Contact : <a href="mailto:support@shopreplace.com" style="color:#3a8dde;">support@shopreplace.com</a>
+        </div>
+    </footer>
+    <script src="../config.js"></script>
+    <script src="../js/mods.js"></script>
+    <script src="../js/particles-config.js"></script>
+    <script>
+    // Apparition au scroll
+    function revealOnScroll() {
+        const elements = document.querySelectorAll('.scroll-fade');
+        const windowHeight = window.innerHeight;
+        elements.forEach(el => {
+            const top = el.getBoundingClientRect().top;
+            if (top < windowHeight - 60) {
+                el.classList.add('visible');
+            }
+        });
+    }
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('DOMContentLoaded', revealOnScroll);
+    // Navbar effet au scroll
+    window.addEventListener('scroll', function() {
+        const nav = document.querySelector('nav');
+        if(window.scrollY > 20) nav.classList.add('scrolled');
+        else nav.classList.remove('scrolled');
+    });
+    document.addEventListener('DOMContentLoaded', () => {
+        initModPage('VEHICULE');
+    });
+    </script>
+</body>
+</html>

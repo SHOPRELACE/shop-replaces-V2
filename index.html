@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP REPLACE - Accueil</title>
+    <meta name="description" content="Découvrez notre collection de mods GTA V - Armes, Véhicules et Personnages personnalisés, ajoutés automatiquement via Discord.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body class="index-page">
+    <div id="particles-js"></div>
+    <nav>
+        <a href="index.html" class="active">Accueil</a>
+        <a href="pages/armes.html">Armes</a>
+        <a href="pages/vehicules.html">Véhicules</a>
+        <a href="pages/personnages.html">Personnages</a>
+    </nav>
+    <button id="discord-float-btn" onclick="window.open('https://discord.gg/fRG26KyHw7','_blank')">
+        <i class="fab fa-discord"></i> Rejoindre le Discord
+    </button>
+    <button id="discord-login-btn" style="position:fixed;top:32px;right:32px;z-index:1003;display:none;background:#5865F2;color:#fff;border:none;border-radius:24px;padding:0.7rem 1.5rem;font-size:1.1rem;font-weight:700;box-shadow:0 4px 24px 0 rgba(88,101,242,0.18);cursor:pointer;">
+        <i class="fab fa-discord"></i> Connexion Discord
+    </button>
+    <button id="create-ticket-btn" style="position:fixed;bottom:100px;right:32px;z-index:1003;display:none;background:linear-gradient(90deg,#3a8dde,#7f53ac);color:#fff;border:none;border-radius:24px;padding:0.7rem 1.5rem;font-size:1.1rem;font-weight:700;box-shadow:0 4px 24px 0 rgba(58,141,222,0.18);cursor:pointer;">
+        <i class="fas fa-ticket-alt"></i> Créer un ticket
+    </button>
+    <header class="dashboard-section section-fx-zoom parallax-img" data-speed="0.15">
+        <img src="assets/images/ee.png" alt="Bannière Accueil" class="img-custom parallax-img" style="max-height:220px;object-fit:cover;width:100%;margin-bottom:2rem;">
+        <div class="hero-content">
+            <h1 class="hero-title animated-bounce">SHOP REPLACE</h1>
+            <p class="hero-subtitle animated-fadein">Le dashboard ultime pour tes mods GTA V<br><span style="font-size:1.1rem;color:#7f53ac;">Ajout automatique via Discord</span></p>
+            <div class="social-links">
+                <a href="https://discord.gg/fRG26KyHw7" target="_blank" class="social-link"><i class="fab fa-discord"></i> Discord</a>
+                <a href="https://www.youtube.com/@nalyd7434" target="_blank" class="social-link"><i class="fab fa-youtube"></i> YouTube</a>
+            </div>
+        </div>
+    </header>
+    <section class="dashboard-section section-fx-left animated-delay-1">
+        <div style="display:flex;align-items:center;gap:2rem;flex-wrap:wrap;">
+            <img src="assets/images/image_modifiee (12).png" alt="Armes" style="max-width:220px;border-radius:18px;box-shadow:0 4px 24px 0 rgba(31,38,135,0.13);" class="parallax-img" data-speed="0.10">
+            <div>
+                <h2 class="hero-title animated-bounce" style="font-size:2rem;">Armes</h2>
+                <p class="hero-subtitle animated-fadein">AWP, MM, M60, RPG et plus</p>
+                <a href="pages/armes.html" class="social-link" style="margin-top:1rem;display:inline-block;">Voir les armes</a>
+            </div>
+        </div>
+    </section>
+    <section class="dashboard-section section-fx-right animated-delay-2">
+        <div style="display:flex;align-items:center;gap:2rem;flex-wrap:wrap;flex-direction:row-reverse;">
+            <img src="assets/images/image_modifiee (17).png" alt="Véhicules" style="max-width:220px;border-radius:18px;box-shadow:0 4px 24px 0 rgba(31,38,135,0.13);" class="parallax-img" data-speed="0.10">
+            <div>
+                <h2 class="hero-title animated-bounce" style="font-size:2rem;">Véhicules</h2>
+                <p class="hero-subtitle animated-fadein">Deluxo, OP, Scarab et plus</p>
+                <a href="pages/vehicules.html" class="social-link" style="margin-top:1rem;display:inline-block;">Voir les véhicules</a>
+            </div>
+        </div>
+    </section>
+    <section class="dashboard-section section-fx animated-delay-3">
+        <div style="display:flex;align-items:center;gap:2rem;flex-wrap:wrap;">
+            <img src="assets/images/image_modifiee (21).png" alt="Personnages" style="max-width:220px;border-radius:18px;box-shadow:0 4px 24px 0 rgba(31,38,135,0.13);" class="parallax-img" data-speed="0.10">
+            <div>
+                <h2 class="hero-title animated-bounce" style="font-size:2rem;">Personnages</h2>
+                <p class="hero-subtitle animated-fadein">Skins et personnages personnalisés</p>
+                <a href="pages/personnages.html" class="social-link" style="margin-top:1rem;display:inline-block;">Voir les personnages</a>
+            </div>
+        </div>
+    </section>
+    <section class="dashboard-section section-fx-zoom animated-delay-4">
+        <h2 class="hero-title" style="font-size:1.5rem;margin-bottom:1rem;">Ajouté via Discord</h2>
+        <div style="display:flex;align-items:center;gap:1.2rem;flex-wrap:wrap;">
+            <i class="fab fa-discord" style="font-size:2.5rem;color:#5865F2;"></i>
+            <div style="font-size:1.1rem;line-height:1.5;">
+                Les nouveaux mods sont ajoutés automatiquement grâce à notre bot Discord.<br>
+                <span style="color:#3a8dde;font-weight:600;">Rejoins le serveur pour proposer ou suivre les ajouts en temps réel !</span>
+            </div>
+        </div>
+    </section>
+    <section class="dashboard-section section-fx-zoom animated-delay-5" style="margin-top:2.5rem;">
+        <h2 class="hero-title" style="font-size:2rem;margin-bottom:1.5rem;">Idées pour aller plus loin</h2>
+        <div class="idea-grid">
+            <div class="idea-card slide-left">
+                <i class="fas fa-images"></i>
+                <h3>Carrousel animé</h3>
+                <p>Affiche tes plus belles images ou mods en défilement automatique, avec effet de zoom et navigation par flèches.</p>
+            </div>
+            <div class="idea-card slide-right">
+                <i class="fas fa-fire"></i>
+                <h3>Section Top Mods</h3>
+                <p>Mets en avant les mods les plus populaires ou les derniers ajoutés, avec badge “Nouveau” ou “🔥 Populaire”.</p>
+            </div>
+            <div class="idea-card slide-up">
+                <i class="fas fa-mouse-pointer"></i>
+                <h3>Animation de survol</h3>
+                <p>Ajoute un effet de zoom, rotation ou glow quand on passe la souris sur une image ou une carte de mod.</p>
+            </div>
+            <div class="idea-card slide-down">
+                <i class="fas fa-chart-bar"></i>
+                <h3>Statistiques animées</h3>
+                <p>Affiche le nombre total de mods, téléchargements, membres Discord, etc. avec des compteurs animés.</p>
+            </div>
+            <div class="idea-card slide-left">
+                <i class="fab fa-discord"></i>
+                <h3>Widget Discord</h3>
+                <p>Affiche en temps réel les derniers mods ajoutés via le bot Discord, avec image miniature et lien direct.</p>
+            </div>
+            <div class="idea-card slide-right">
+                <i class="fas fa-comment-dots"></i>
+                <h3>Avis & Commentaires</h3>
+                <p>Permets aux utilisateurs de laisser un avis ou un commentaire sur un mod, avec affichage dynamique.</p>
+            </div>
+            <div class="idea-card slide-up">
+                <i class="fas fa-adjust"></i>
+                <h3>Mode sombre/clair</h3>
+                <p>Ajoute un bouton pour basculer entre un thème sombre et un thème clair, avec transition fluide.</p>
+            </div>
+            <div class="idea-card slide-down">
+                <i class="fas fa-random"></i>
+                <h3>Transitions de page</h3>
+                <p>Ajoute un effet de fondu ou de slide quand on change de page pour une expérience plus fluide.</p>
+            </div>
+            <div class="idea-card slide-left">
+                <i class="fas fa-water"></i>
+                <h3>Fond animé évolutif</h3>
+                <p>Ajoute un fond animé (vagues, dégradé mouvant, particules interactives) qui change selon l’heure ou l’action de l’utilisateur.</p>
+            </div>
+            <div class="idea-card slide-right">
+                <i class="fas fa-envelope"></i>
+                <h3>Footer enrichi</h3>
+                <p>Ajoute des liens utiles (FAQ, contact, mentions légales), les réseaux sociaux, et un mini-formulaire de contact.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Carrousel animé -->
+    <section class="dashboard-section section-fx-zoom animated-delay-1" style="margin-top:2.5rem;">
+        <h2 class="hero-title" style="font-size:2rem;margin-bottom:1.5rem;">Mods en vedette</h2>
+        <div class="carousel" id="carousel-mods">
+            <div class="carousel-track"></div>
+            <button class="carousel-btn prev" onclick="carouselPrev()"><i class="fas fa-chevron-left"></i></button>
+            <button class="carousel-btn next" onclick="carouselNext()"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+    <!-- Section mods synchronisés avec le bot Discord -->
+    <section class="dashboard-section section-fx animated-delay-2" style="margin-top:2.5rem;">
+        <h2 class="hero-title" style="font-size:2rem;margin-bottom:1.5rem;">Tous les derniers mods ajoutés</h2>
+        <div id="mods-feed" class="mods-feed-grid"></div>
+    </section>
+    <!-- Statistiques animées -->
+    <section class="dashboard-section section-fx animated-delay-2" style="margin-top:2.5rem;">
+        <h2 class="hero-title" style="font-size:2rem;margin-bottom:1.5rem;">Statistiques</h2>
+        <div class="stats-grid">
+            <div class="stat-card"><i class="fas fa-database"></i><div class="stat-number" data-target="128">0</div><div class="stat-label">Mods</div></div>
+            <div class="stat-card"><i class="fas fa-download"></i><div class="stat-number" data-target="5421">0</div><div class="stat-label">Téléchargements</div></div>
+            <div class="stat-card"><i class="fab fa-discord"></i><div class="stat-number" data-target="312">0</div><div class="stat-label">Membres Discord</div></div>
+            <div class="stat-card"><i class="fas fa-star"></i><div class="stat-number" data-target="4.8">0</div><div class="stat-label">Note Moyenne</div></div>
+        </div>
+    </section>
+    <!-- Widget Discord stylisé -->
+    <section class="dashboard-section section-fx-right animated-delay-3" style="margin-top:2.5rem;">
+        <h2 class="hero-title" style="font-size:2rem;margin-bottom:1.5rem;">Derniers ajouts Discord</h2>
+        <div class="discord-widget"></div>
+    </section>
+    <!-- Section avis utilisateurs -->
+    <section class="dashboard-section section-fx-left animated-delay-4" style="margin-top:2.5rem;">
+        <h2 class="hero-title" style="font-size:2rem;margin-bottom:1.5rem;">Avis des utilisateurs</h2>
+        <div class="reviews-grid">
+            <div class="review-card"><div class="review-stars">★★★★★</div><div class="review-text">Super site, mods de qualité et ajout rapide via Discord !</div><div class="review-user">- Alex</div></div>
+            <div class="review-card"><div class="review-stars">★★★★☆</div><div class="review-text">Interface moderne, facile à utiliser, j’adore les effets !</div><div class="review-user">- Sam</div></div>
+            <div class="review-card"><div class="review-stars">★★★★★</div><div class="review-text">Le carrousel et les stats rendent le site vivant, bravo !</div><div class="review-user">- Léo</div></div>
+        </div>
+    </section>
+    <footer class="dashboard-section section-fx animated-delay-5" style="text-align:center;padding:1.5rem 1rem 1rem 1rem;margin-top:2rem;">
+        <div style="font-size:1.1rem;color:#bfc7e3;">&copy; 2025 SHOP REPLACE. Tous droits réservés.</div>
+        <div style="margin-top:0.5rem;font-size:0.95rem;">
+            Contact : <a href="mailto:support@shopreplace.com" style="color:#3a8dde;">support@shopreplace.com</a>
+        </div>
+    </footer>
+    <script src="js/particles-config.js"></script>
+    <script>
+    // Apparition au scroll pour tous les effets avancés + delays
+    function revealOnScroll() {
+        const all = [
+            ...document.querySelectorAll('.scroll-fade'),
+            ...document.querySelectorAll('.slide-left'),
+            ...document.querySelectorAll('.slide-right'),
+            ...document.querySelectorAll('.slide-up'),
+            ...document.querySelectorAll('.slide-down'),
+            ...document.querySelectorAll('.section-fx'),
+            ...document.querySelectorAll('.section-fx-left'),
+            ...document.querySelectorAll('.section-fx-right'),
+            ...document.querySelectorAll('.section-fx-zoom')
+        ];
+        const windowHeight = window.innerHeight;
+        all.forEach((el, i) => {
+            const top = el.getBoundingClientRect().top;
+            if (top < windowHeight - 60) {
+                el.classList.add('visible');
+                // apparition séquentielle
+                if (el.classList.contains('animated-delay-1')) el.style.transitionDelay = '0.15s';
+                if (el.classList.contains('animated-delay-2')) el.style.transitionDelay = '0.35s';
+                if (el.classList.contains('animated-delay-3')) el.style.transitionDelay = '0.55s';
+                if (el.classList.contains('animated-delay-4')) el.style.transitionDelay = '0.75s';
+                if (el.classList.contains('animated-delay-5')) el.style.transitionDelay = '0.95s';
+            }
+        });
+    }
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('DOMContentLoaded', revealOnScroll);
+    // Navbar effet au scroll
+    window.addEventListener('scroll', function() {
+        const nav = document.querySelector('nav');
+        if(window.scrollY > 20) nav.classList.add('scrolled');
+        else nav.classList.remove('scrolled');
+    });
+    // Parallax images
+    window.addEventListener('scroll', function() {
+        document.querySelectorAll('.parallax-img').forEach(function(img) {
+            const speed = parseFloat(img.getAttribute('data-speed')) || 0.1;
+            const y = window.scrollY * speed;
+            img.style.transform = `translateY(${y}px)`;
+        });
+    });
+    // Animation titres (rebond)
+    document.querySelectorAll('.animated-bounce').forEach(function(el) {
+        el.classList.add('bounce-animate');
+    });
+    // Animation fadein
+    document.querySelectorAll('.animated-fadein').forEach(function(el) {
+        el.classList.add('fadein-animate');
+    });
+
+    // --- SYNCHRO AVEC LE BOT DISCORD ---
+    const API_URL = window.API_URL || 'https://worker-production-26e1.up.railway.app/api';
+
+    async function fetchAllMods() {
+        const cats = ['ARME','VEHICULE','PERSONNAGE'];
+        let all = [];
+        for (const cat of cats) {
+            try {
+                const res = await fetch(`${API_URL}/mods/${cat}`);
+                const data = await res.json();
+                if (data.success && Array.isArray(data.mods)) {
+                    all = all.concat(data.mods.map(m => ({...m, category: cat})));
+                }
+            } catch(e) { /* ignore */ }
+        }
+        // Tri par date décroissante si possible
+        all.sort((a,b) => (b.date||0)-(a.date||0));
+        return all;
+    }
+
+    // Carrousel dynamique
+    async function updateCarousel() {
+        const mods = (await fetchAllMods()).slice(0, 6);
+        const track = document.querySelector('.carousel-track');
+        if (!track) return;
+        track.innerHTML = mods.map(mod => `
+          <div class="carousel-item">
+            <img src="${mod.image||'assets/images/logo1.png'}" alt="${mod.name}">
+            <div class="caption">${mod.name}</div>
+          </div>
+        `).join('');
+        showCarousel(0);
+    }
+    // Widget Discord dynamique
+    async function updateDiscordWidget() {
+        const mods = (await fetchAllMods()).slice(0, 3);
+        const widget = document.querySelector('.discord-widget');
+        if (!widget) return;
+        widget.innerHTML = mods.map(mod => `
+          <div class="discord-item">
+            <img src="${mod.image||'assets/images/logo1.png'}" alt="Mod Discord">
+            <div><b>${mod.name}</b><br><span>Ajouté récemment</span></div>
+          </div>
+        `).join('');
+    }
+    // Stats dynamiques
+    async function updateStats() {
+        const mods = await fetchAllMods();
+        document.querySelectorAll('.stat-number').forEach(el => {
+            if (el.closest('.stat-card').querySelector('.fa-database')) el.setAttribute('data-target', mods.length);
+            if (el.closest('.stat-card').querySelector('.fa-download')) el.setAttribute('data-target', Math.floor(mods.length*42+Math.random()*100));
+            if (el.closest('.stat-card').querySelector('.fa-discord')) el.setAttribute('data-target', 312+Math.floor(Math.random()*10));
+            if (el.closest('.stat-card').querySelector('.fa-star')) el.setAttribute('data-target', (4.5+Math.random()*0.5).toFixed(1));
+        });
+        animateStats();
+    }
+    window.addEventListener('DOMContentLoaded',()=>{
+        updateCarousel();
+        updateDiscordWidget();
+        updateStats();
+    });
+    // Carrousel simple
+    let carouselIndex = 0;
+    function showCarousel(idx) {
+      const track = document.querySelector('.carousel-track');
+      const items = document.querySelectorAll('.carousel-item');
+      if (!track || !items.length) return;
+      carouselIndex = (idx + items.length) % items.length;
+      track.style.transform = `translateX(-${carouselIndex * 100}%)`;
+    }
+    function carouselPrev() { showCarousel(carouselIndex - 1); }
+    function carouselNext() { showCarousel(carouselIndex + 1); }
+    // Stats animées
+    function animateStats() {
+      document.querySelectorAll('.stat-number').forEach(el => {
+        const target = parseFloat(el.getAttribute('data-target'));
+        let count = 0;
+        const isFloat = String(target).includes('.');
+        const step = target > 100 ? Math.ceil(target/60) : (isFloat ? 0.05 : 1);
+        function update() {
+          count += step;
+          if ((isFloat && count >= target) || (!isFloat && count >= target)) count = target;
+          el.textContent = isFloat ? count.toFixed(1) : count;
+          if (count < target) requestAnimationFrame(update);
+        }
+        update();
+      });
+    }
+    window.addEventListener('DOMContentLoaded', animateStats);
+
+    // Mods feed dynamique
+    async function updateModsFeed() {
+      const mods = await fetchAllMods();
+      const container = document.getElementById('mods-feed');
+      if (!container) return;
+      container.innerHTML = mods.slice(0, 12).map(mod => `
+        <div class="mod-feed-card">
+          <img src="${mod.image || 'assets/images/logo1.png'}" alt="${mod.name}" class="mod-feed-img">
+          <div class="mod-feed-content">
+            <div class="mod-feed-title">${mod.name || 'Sans nom'}</div>
+            <div class="mod-feed-desc">${mod.description || 'Aucune description.'}</div>
+            <div class="mod-feed-meta">
+              <span>${mod.type ? mod.type : ''}</span>
+              <span>${mod.date ? new Date(mod.date).toLocaleDateString('fr-FR') : ''}</span>
+              ${mod.author ? `<span>par ${mod.author}</span>` : ''}
+            </div>
+            ${mod.discordMessageUrl ? `<a href="${mod.discordMessageUrl}" target="_blank" class="mod-feed-link">Voir sur Discord</a>` : ''}
+          </div>
+        </div>
+      `).join('');
+    }
+    window.addEventListener('DOMContentLoaded', updateModsFeed);
+
+    // --- AUTH DISCORD ---
+    const DISCORD_CLIENT_ID = '1179824280984780881'; // à remplacer par ton vrai client_id
+    const DISCORD_REDIRECT_URI = window.location.origin + window.location.pathname;
+    const DISCORD_GUILD_ID = '112222222222222222'; // à remplacer par l'ID de ton serveur
+    let discordToken = null;
+    let discordUser = null;
+    let discordGuilds = [];
+
+    function getDiscordAuthUrl() {
+        const params = new URLSearchParams({
+            client_id: DISCORD_CLIENT_ID,
+            redirect_uri: DISCORD_REDIRECT_URI,
+            response_type: 'token',
+            scope: 'identify guilds'
+        });
+        return `https://discord.com/oauth2/authorize?${params.toString()}`;
+    }
+
+    function checkDiscordAuth() {
+        // Vérifie si on a un token dans l'URL (OAuth2 Implicit Grant)
+        if (window.location.hash.includes('access_token')) {
+            const params = new URLSearchParams(window.location.hash.slice(1));
+            discordToken = params.get('access_token');
+            window.localStorage.setItem('discord_token', discordToken);
+            window.location.hash = '';
+        } else {
+            discordToken = window.localStorage.getItem('discord_token');
+        }
+        if (!discordToken) {
+            document.getElementById('discord-login-btn').style.display = 'block';
+            document.getElementById('create-ticket-btn').style.display = 'none';
+            // Désactive les boutons de téléchargement
+            document.querySelectorAll('.download-btn').forEach(btn=>btn.setAttribute('disabled','disabled'));
+            return;
+        }
+        // Récupère l'utilisateur et ses guilds
+        fetch('https://discord.com/api/users/@me', {headers:{Authorization:'Bearer '+discordToken}})
+            .then(r=>r.json())
+            .then(user=>{
+                discordUser = user;
+                return fetch('https://discord.com/api/users/@me/guilds', {headers:{Authorization:'Bearer '+discordToken}})
+            })
+            .then(r=>r.json())
+            .then(guilds=>{
+                discordGuilds = guilds;
+                const inGuild = guilds.some(g=>g.id===DISCORD_GUILD_ID);
+                if (inGuild) {
+                    document.getElementById('discord-login-btn').style.display = 'none';
+                    document.getElementById('create-ticket-btn').style.display = 'block';
+                    document.querySelectorAll('.download-btn').forEach(btn=>btn.removeAttribute('disabled'));
+                } else {
+                    document.getElementById('discord-login-btn').style.display = 'block';
+                    document.getElementById('create-ticket-btn').style.display = 'none';
+                    document.querySelectorAll('.download-btn').forEach(btn=>btn.setAttribute('disabled','disabled'));
+                }
+            })
+            .catch(()=>{
+                document.getElementById('discord-login-btn').style.display = 'block';
+                document.getElementById('create-ticket-btn').style.display = 'none';
+                document.querySelectorAll('.download-btn').forEach(btn=>btn.setAttribute('disabled','disabled'));
+            });
+    }
+    document.getElementById('discord-login-btn').onclick = ()=>{
+        window.location.href = getDiscordAuthUrl();
+    };
+    window.addEventListener('DOMContentLoaded', checkDiscordAuth);
+    </script>
+</body>
+</html>
